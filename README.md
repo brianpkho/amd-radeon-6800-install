@@ -20,3 +20,5 @@ To install applications that uses rocm (ie. pytorch, tensorflow, onnxruntime, et
 11. location=$(pip show torch | grep Location | awk -F ": " '{print $2}')
 12. cd ${location}/torch/lib/
 13. rm libhsa-runtime64.so*
+
+14. `pip install torch-directml` (more info here: https://learn.microsoft.com/en-us/windows/ai/directml/pytorch-wsl)
